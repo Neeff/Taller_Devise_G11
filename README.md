@@ -1,7 +1,9 @@
 # Taller DEVISE
 ## Autenticación con Devise
+### correr los siguientes comandos  en la consola antes de inciar, para ello debemos situarnos en la carpeta contenedora de nuestro proyecto.
+```rails db:create ``` , ``` rails db:migrate ```, ``` rails db:seed```
 
-[Link Github](https://github.com/DesafioLatam/Taller_Devise_G11)
+#### Para logearnos como Admin hacemos uso del correo ```admin@prueba.com``` y la password ```123456```
 
 El objetivo de esta actividad es la implementación de un Sistema de autenticación con **Devise** para permitir el ingreso de un usuario en una aplicación.
 
@@ -30,7 +32,7 @@ brew update
 brew install imagemagick
 ~~~
 
-EN **Ubuntu**: 
+EN **Ubuntu**:
 
 ~~~
 sudo apt-get update
@@ -46,7 +48,7 @@ Cuando ya  tengas instalado imageMagik, continua abriendo tu proyecto. Deberas e
 bundle install
 ~~~
 
-y luego corre una migración: 
+y luego corre una migración:
 
 ~~~
 Rails db:migrate
@@ -80,7 +82,7 @@ Pictory es una aplicación para que diversos usuarios guarden sus historias y pu
 	- Añadir los campos name y username a los formularios de devise.
 	- Agregar los campos nuevos a los strong paramas
 	> Revisar documentación de <a href="https://github.com/plataformatec/devise">devise</a>.
-	- Validar en modelo user el campo name como obligatorio, y el campo username como obligatorio y único. 
+	- Validar en modelo user el campo name como obligatorio, y el campo username como obligatorio y único.
 
 - Modificar el menú para que, cuando el usuario no se encuentre conectado, muestre los link de login y registro, y cuando se encuentre conectado, muestre los link de editar registro y cerrar sesión.
 
@@ -104,4 +106,3 @@ Pictory es una aplicación para que diversos usuarios guarden sus historias y pu
 
 - Dentro del panel de control de usuarios, añadir al formulario de user la opción para dar o quitar el privilegio de admin.
 	- Estas acciones solo deben estar disponibles para un usuario con el rol admin.
-

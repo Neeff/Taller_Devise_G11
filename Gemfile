@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 # gems for images
 gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
+gem 'devise'
+gem 'faker'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

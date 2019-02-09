@@ -1,0 +1,7 @@
+<h1>Histories From <%= current_user.name%> <span class="label label-success"><%= @count%></span></h1>
+
+<ul class="list-group">
+<%@histories.each do |item|%>
+  <li class="list-group-item"><%=item.title%></li>
+<% end %>
+</ul>

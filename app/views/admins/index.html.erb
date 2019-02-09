@@ -1,0 +1,32 @@
+<h1>Panel Admin</h1>
+<div class="row">
+  <div class="col-lg-8">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Admin</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @users.each do |item| %>
+          <tr>
+            <td><%=item.name%></td>
+            <td><%=item.email%></td>
+            <% if item.admin?%>
+              <td><span class="label label-success"><%=item.admin%></span></td>
+              <% else %>
+                <td><span class="label label-danger"><%=item.admin%></span></td>
+                <% end %>
+                <td><%= link_to 'Admin', update_admin_path(item.id), method: :PUT, class: 'btn btn-success btn-lg-4'%></td>
+
+
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  </div>
