@@ -3,6 +3,8 @@
 ### correr los siguientes comandos  en la consola antes de inciar, para ello debemos situarnos en la carpeta contenedora de nuestro proyecto.
 ```rails db:create ``` , ``` rails db:migrate ```, ``` rails db:seed```
 
+#### [Link a la aplicacion](https://radiant-meadow-96608.herokuapp.com/)
+
 #### Para logearnos como Admin hacemos uso del correo ```admin@prueba.com``` y la password ```123456```
 
 El objetivo de esta actividad es la implementación de un Sistema de autenticación con **Devise** para permitir el ingreso de un usuario en una aplicación.
